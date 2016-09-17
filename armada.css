@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+}
+
+header .titles .title {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 50px;
+  font-size: 40px;
+  box-sizing: border-box;
+  border-bottom: 3px solid black;
+}
+
+header .titles #redTitle {
+  background-color: red;
+}
+
+header .titles #blueTitle {
+  background-color: blue;
+  text-align: right;
+}
+
+header .titles .victory {
+  display: inline;
+}
+
+header .titles #redVictory {
+  position: absolute;
+  right: 50px;
+}
+
+header .titles #blueVictory {
+  position: absolute;
+  left: 50px;
+}
+
+header #redInput {
+  position: absolute;
+  bottom: 12px;
+  left: 280px;
+}
+
+header #blueInput {
+  position: absolute;
+  bottom: 12px;
+  right: 280px;
+}
+
+header .button {
+  background-color: #333;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+
+section {
+  position: relative;
+  height: 545px;
+  width: 100%;
+  background: linear-gradient(to right, red 40%, blue 60%);
+}
+
+.background {
+  height: 455px;
+  width: 50%;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.score {
+  position: absolute;
+  height: 445px;
+  width: 50%;
+  top: 100px;
+  font-size: 20vw;
+  padding-top: 0;
+}
+
+#redDisplay {
+  left: 0;
+}
+
+#blueDisplay {
+  right: 0;
+  text-align: right;
+}

@@ -1,0 +1,94 @@
+body {
+  margin: 0 auto;
+  background-color: #123456;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+header h1 {
+  color: #123456;
+  padding-left: 25px;
+  margin-top: 0;
+}
+
+#navBar {
+  position: fixed;
+  top: 70px;
+  left: 5px;
+  height: 324px;
+  width: 100px;
+  background-color: #123456;
+}
+
+.navbutton {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #123456;
+  text-align: center;
+  line-height: 85px;
+  transition: background-color .3s, border .3s, border-radius .3s;
+}
+
+.container {
+  width: 87%;
+  background-color: #abcdef;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+article img {
+  float: right;
+  margin-right: 10px;
+  max-width: 25%;
+}
+
+article h2 {
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+  font-style: italic;
+}
+
+article p {
+  font-size: 22px;
+  text-indent: 50px;
+  margin-left: 10px;
+}
+
+article ul li {
+  font-size: 22px;
+}
+
+article .portfolio {
+  height: 168px;
+  width: calc(100%-10px);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 25px;
+  background-color: #ccc;
+}
+
+article .portfolio img {
+  float: left;
+  height: 100%;
+}
+
+article .whitespace {
+  height: 200px;
+  width: auto;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+}

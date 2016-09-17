@@ -1,0 +1,212 @@
+html {
+  margin: 0;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+header {
+  position: relative;
+  height: 10vh;
+  width: 100%;
+  background-color: gray;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: 0;
+}
+
+header #turnButton {
+  margin: 5px;
+  height: 100%;
+  width: 25%;
+  background-color: lightgray;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 8vh;
+  text-align: center;
+  transition: background-color .3s;
+}
+
+header #turnButton:hover {
+  background-color: white;
+}
+
+header #influenceLeftLabel {
+  position: absolute;
+  top: 0px;
+  right: 1vw;
+  height: 100%;
+  width: 25%;
+  background-color: lightgray;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 7vh;
+  text-align: left;
+}
+
+header #influenceLeft {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 6vh;
+  text-align: center;
+}
+
+#turnsLeftLabel {
+  position: absolute;
+  top: 0px;
+  left: 35vw;
+  height: 100%;
+  width: 25%;
+  background-color: lightgray;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 7vh;
+  text-align: left;
+}
+
+#turnsLeft {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 6vh;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+.player {
+  position: relative;
+  height: 14.5vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 7.5vh;
+}
+
+.influenceWrapper {
+  height: 100%;
+  width: 35vw;
+  display: inline-block;
+}
+
+.influenceWrapper div {
+  display: inline-block;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  display: inline;
+}
+
+.influenceLabel {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  top: 1.6vh;
+  left: 7vw;
+}
+
+.influence {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+.citiesLabel {
+  position: absolute;
+  left: 44vw;
+  padding-top: 1.6vh;
+  display: inline-block;
+}
+
+.cities {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.projectedLabel {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 25vw;
+  padding-top: 1.6vh;
+}
+
+.projected {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: white;
+}
+
+#redPlayer {
+  border: 5px solid red;
+  background-color: #ff9696;
+}
+
+#redProjected {
+  background-color: red;
+}
+
+#yellowPlayer {
+  border: 5px solid yellow;
+  background-color: #ffff96;
+}
+
+#yellowProjected {
+  background-color: yellow;
+}
+
+#greenPlayer {
+  border: 5px solid green;
+  background-color: #96ff96;
+}
+
+#greenProjected {
+  background-color: green;
+}
+
+#bluePlayer {
+  border: 5px solid blue;
+  background-color: #9696ff;
+}
+
+#blueProjected {
+  background-color: blue;
+}
+
+#purplePlayer {
+  border: 5px solid purple;
+  background-color: #ff96ff;
+}
+
+#purpleProjected {
+  background-color: purple;
+}
+
+#blackPlayer {
+  border: 5px solid black;
+  background-color: #969696;
+}
+
+#blackProjected {
+  background-color: #505050;
+}
