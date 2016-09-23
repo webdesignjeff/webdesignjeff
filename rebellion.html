@@ -1,0 +1,772 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rebellion Game Tracker</title>
+    <link rel="stylesheet" href="rebellion.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="rebellion.js"></script>
+  </head>
+  <body>
+    <section class="map">
+      <img src="images/map.png" />
+      <span class="planet" id="pAlderaan">
+        <span class="tooltip">Alderaan</span>
+      </span>
+      <span class="planet" id="pBespin">
+        <span class="tooltip">Bespin</span>
+      </span>
+      <span class="planet" id="pBothawui">
+        <span class="tooltip">Bothawui</span>
+      </span>
+      <span class="planet" id="pCatoNeimoidia">
+        <span class="tooltip">Cato Neimoidia</span>
+      </span>
+      <span class="planet" id="pCorellia">
+        <span class="tooltip">Corellia</span>
+      </span>
+      <span class="planet" id="pCoruscant">
+        <span class="tooltip">Coruscant</span>
+      </span>
+      <span class="planet" id="pDagobah">
+        <span class="tooltip">Dagobah</span>
+      </span>
+      <span class="planet" id="pDantooine">
+        <span class="tooltip">Dantooine</span>
+      </span>
+      <span class="planet" id="pDathomir">
+        <span class="tooltip">Dathomir</span>
+      </span>
+      <span class="planet" id="pEndor">
+        <span class="tooltip">Endor</span>
+      </span>
+      <span class="planet" id="pFelucia">
+        <span class="tooltip">Felucia</span>
+      </span>
+      <span class="planet" id="pGeonosis">
+        <span class="tooltip">Geonosis</span>
+      </span>
+      <span class="planet" id="pHoth">
+        <span class="tooltip">Hoth</span>
+      </span>
+      <span class="planet" id="pIllum">
+        <span class="tooltip">llum</span>
+      </span>
+      <span class="planet" id="pKashyyyk">
+        <span class="tooltip">Kashyyyk</span>
+      </span>
+      <span class="planet" id="pKessel">
+        <span class="tooltip">Kessel</span>
+      </span>
+      <span class="planet" id="pMalastare">
+        <span class="tooltip">Malastare</span>
+      </span>
+      <span class="planet" id="pMandalore">
+        <span class="tooltip">Mandalore</span>
+      </span>
+      <span class="planet" id="pMonCalamari">
+        <span class="tooltip">Mon Calamari</span>
+      </span>
+      <span class="planet" id="pMustafar">
+        <span class="tooltip">Mustafar</span>
+      </span>
+      <span class="planet" id="pMygeeto">
+        <span class="tooltip">Mygeeto</span>
+      </span>
+      <span class="planet" id="pNaboo">
+        <span class="tooltip">Naboo</span>
+      </span>
+      <span class="planet" id="pNalHutta">
+        <span class="tooltip">Nal Hutta</span>
+      </span>
+      <span class="planet" id="pOrdMantell">
+        <span class="tooltip">Ord Mantell</span>
+      </span>
+      <span class="planet" id="pRebelBase">
+        <span class="tooltip">Rebel Base</span>
+      </span>
+      <span class="planet" id="pRodia">
+        <span class="tooltip">Rodia</span>
+      </span>
+      <span class="planet" id="pRyloth">
+        <span class="tooltip">Ryloth</span>
+      </span>
+      <span class="planet" id="pSaleucami">
+        <span class="tooltip">Saleucami</span>
+      </span>
+      <span class="planet" id="pSullust">
+        <span class="tooltip">Sullust</span>
+      </span>
+      <span class="planet" id="pTatooine">
+        <span class="tooltip">Tatooine</span>
+      </span>
+      <span class="planet" id="pToydaria">
+        <span class="tooltip">Toydaria</span>
+      </span>
+      <span class="planet" id="pUtapau">
+        <span class="tooltip">Utapau</span>
+      </span>
+      <span class="planet" id="pYavin">
+        <span class="tooltip">Yavin</span>
+      </span>
+    </section>
+    <section class="startup">
+      <p>Please select starting systems:</p>
+      <p>Imperial loyal systems:</p>
+      <select id='impLoyal1'>
+        <option value="default">Select</option>
+        <option value="Corellia">Corellia</option>
+        <option value="Mandalore">Mandalore</option>
+        <option value="Mustafar">Mustafar</option>
+        <option value="Mygeeto">Mygeeto</option>
+        <option value="Rodia">Rodia</option>
+        <option value="Saleucami">Saleucami</option>
+        <option value="Sullust">Sullust</option>
+      </select>
+      <select id='impLoyal2'>
+        <option value="default">Select</option>
+        <option value="Corellia">Corellia</option>
+        <option value="Mandalore">Mandalore</option>
+        <option value="Mustafar">Mustafar</option>
+        <option value="Mygeeto">Mygeeto</option>
+        <option value="Rodia">Rodia</option>
+        <option value="Saleucami">Saleucami</option>
+        <option value="Sullust">Sullust</option>
+      </select>
+      <p>Imperial subjugated systems:</p>
+      <select id='impSub1'>
+        <option value="default">Select</option>
+        <option value="Corellia">Corellia</option>
+        <option value="Mandalore">Mandalore</option>
+        <option value="Mustafar">Mustafar</option>
+        <option value="Mygeeto">Mygeeto</option>
+        <option value="Rodia">Rodia</option>
+        <option value="Saleucami">Saleucami</option>
+        <option value="Sullust">Sullust</option>
+      </select>
+      <select id='impSub2'>
+        <option value="default">Select</option>
+        <option value="Corellia">Corellia</option>
+        <option value="Mandalore">Mandalore</option>
+        <option value="Mustafar">Mustafar</option>
+        <option value="Mygeeto">Mygeeto</option>
+        <option value="Rodia">Rodia</option>
+        <option value="Saleucami">Saleucami</option>
+        <option value="Sullust">Sullust</option>
+      </select>
+      <select id='impSub3'>
+        <option value="default">Select</option>
+        <option value="Corellia">Corellia</option>
+        <option value="Mandalore">Mandalore</option>
+        <option value="Mustafar">Mustafar</option>
+        <option value="Mygeeto">Mygeeto</option>
+        <option value="Rodia">Rodia</option>
+        <option value="Saleucami">Saleucami</option>
+        <option value="Sullust">Sullust</option>
+      </select>
+      <p>Rebel systems:</p>
+      <select id='rebelLoyal1'>
+        <option value="default">Select</option>
+        <option value="Bothawui">Bothawui</option>
+        <option value="Kashyyyk">Kashyyyk</option>
+        <option value="MonCalamari">Mon Calamari</option>
+        <option value="Naboo">Naboo</option>
+        <option value="Ryloth">Ryloth</option>
+      </select>
+      <select id='rebelLoyal2'>
+        <option value="default">Select</option>
+        <option value="Bothawui">Bothawui</option>
+        <option value="Kashyyyk">Kashyyyk</option>
+        <option value="MonCalamari">Mon Calamari</option>
+        <option value="Naboo">Naboo</option>
+        <option value="Ryloth">Ryloth</option>
+      </select>
+      <select id='rebelLoyal3'>
+        <option value="default">Select</option>
+        <option value="Bothawui">Bothawui</option>
+        <option value="Kashyyyk">Kashyyyk</option>
+        <option value="MonCalamari">Mon Calamari</option>
+        <option value="Naboo">Naboo</option>
+        <option value="Ryloth">Ryloth</option>
+      </select>
+      <div></div>
+      <button id="startupSubmit">Submit!</button>
+      <button id="startupCancel">Cancel</button>
+    </section>
+    <section class="container">
+      <ul id="tabs">
+        <li class="tab">Help</li>
+        <li class="tab active">Checklist</li>
+        <li class="tab">Special</li>
+      </ul>
+      <div id="contentContainer">
+        <div class="content">
+          <h2>What is this?</h2>
+          <p>This map is intended to help the Imperial player in Star Wars Rebellion track the information they've recieved and locate the Rebel Base, as well as streamlining the Build Phase, one of the more time-intensive parts of the game.</p>
+          <p>Note: This map makes heavy use of color-coding. My apologies go to any color-blind viewers I may have, and hope that you can still make use of the checklist and build phase automation.</p>
+          <h2>Startup Screen</h2>
+          <p>First thing to do is select the starting planets for both sides. Because the five Imperial probe cards drawn are returned to the game box, the probe options for those planets are locked in the checklist.</p>
+          <p>If you don't wish to use that functionality, you can press Cancel and select the systems manually in the checklist.</p>
+          <h2>Map and Checklist Tab</h2>
+          <p>The map is color coded to display a planet's current loyalty and probe status:</p>
+          <h3>Border color - System Loyalty</h3>
+          <div class="previewbox" id="neutralPre">Neutral</div>
+          <div class="previewbox" id="rebelPre">Rebel</div>
+          <div class="previewbox" id="contestedPre">Contested</div>
+          <div class="previewbox" id="subjugatedPre">Subjugated</div>
+          <div class="previewbox" id="imperialPre">Imperial</div>
+          <p>Contested is primarily used for situations where a player controls a planet, but cannot produce units, such as Rebels having troops on an Imperial-loyal planet.</p>
+          <p>Remote planets (planets that cannot have loyalty) do not have a border.</p>
+          <h3>Center color - Probe Card Status</h3>
+          <div class="previewbox" id="unknownPre">Unknown</div>
+          <div class="previewbox" id="checkedPre">Checked Manually</div>
+          <div class="previewbox" id="cardPre">Probe Card Drawn</div>
+          <p>In Rebellion, there are three ways to confirm a planet is not the Rebel Base:</p>
+          <ul>
+            <li>Drawing the probe card for that planet.</li>
+            <li>Gaining loyalty over that planet.</li>
+            <li>Moving ground units to that planet.</li>
+          </ul>
+          <p>Accordingly, if you mark a planet's loyalty as Subjugated or Imperial and that planet is currently marked as Unknown, the checklist will automatically flag that system as Checked.</p>
+          <p>Additionally, a system marked as Checked or Probe Card will turn green in the checklist so you can see at a glance which systems are still in question.</p>
+          <h2>Special Tab</h2>
+          <p>This tab contains the other functions of the map and the build phase automation.</p>
+          <h3>Destroy Planet</h3>
+          <p>This function is used when you play the Superlaser Online card to destroy a planet. Select the planet in the dropdown menu, then push the button. You'll have a confirmation window, and if you proceed, that planet will be erased from the map and checklist permanently.</p>
+          <p>And yes, you can blow up the Imperial capital Coruscant.</p>
+          <h3>Rebels Moved</h3>
+          <p>If the Rebel player moves the Rebel Base, press this button. This goes through the planet list and checks for planets with a probe status of checked that also has a loyalty of Neutral or Rebel, and resets the probe status to unknown.</p>
+          <p>The logic behind this: When the Rebels move the Rebel Base, they can't choose a planet loyal to the Imperials, or a planet with Imperial units (which also excludes any subjugated planets)</p>
+          <p>After this process completes, you'll want to re-flag any systems where you currently have units, as those would not be valid locations for the Rebels</p>
+          <h3>Build Phase</h3>
+          <p>This button goes through all planets and based on loyal/subjugated status, adds the appropriate entries to the table below for unit production.</p>
+          <p>The columns labelled 1-3 are which space of the build queue these units should go to.</p>
+          <p>This is why a system that can't produce units due to hostile units or sabotage should be marked as Contested.</p>
+        </div>
+        <div class="content active">
+          <div class="controller" id="Coruscant">Coruscant
+            Loyalty
+            <select class="loyalty" id="lCoruscant">
+              <option value="imperial">Imperial</option>
+              <option value="contested">Contested</option>
+            </select>
+          </div>
+          <div class="controller" id="RebelBase">Rebel Base
+            Loyalty
+            <select class="loyalty" id="lRebelBase">
+              <option value="rebel">Rebel</option>
+              <option value="contested">Contested</option>
+            </select>
+          </div>
+          <div class="controller" id="Alderaan">Alderaan
+            Loyalty
+            <select class="loyalty" id="lAlderaan">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeAlderaan" value="unknown" checked>Unknown
+              <input type="radio" name="probeAlderaan" value="checked">Checked
+              <input type="radio" name="probeAlderaan" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Bespin">Bespin
+            Loyalty
+            <select class="loyalty"  id="lBespin">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeBespin" value="unknown" checked>Unknown
+              <input type="radio" name="probeBespin" value="checked">Checked
+              <input type="radio" name="probeBespin" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Bothawui">Bothawui
+            Loyalty
+            <select class="loyalty" id="lBothawui">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeBothawui" value="unknown" checked>Unknown
+              <input type="radio" name="probeBothawui" value="checked">Checked
+              <input type="radio" name="probeBothawui" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="CatoNeimoidia">Cato Neimoidia
+            Loyalty
+            <select class="loyalty"  id="lCatoNeimoidia">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeCatoNeimoidia" value="unknown" checked>Unknown
+              <input type="radio" name="probeCatoNeimoidia" value="checked">Checked
+              <input type="radio" name="probeCatoNeimoidia" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Corellia">Corellia
+            Loyalty
+            <select class="loyalty" id="lCorellia">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeCorellia" value="unknown" checked>Unknown
+              <input type="radio" name="probeCorellia" value="checked">Checked
+              <input type="radio" name="probeCorellia" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Dagobah">Dagobah
+            <span class="probe">
+              <input type="radio" name="probeDagobah" value="unknown" checked>Unknown
+              <input type="radio" name="probeDagobah" value="checked">Checked
+              <input type="radio" name="probeDagobah" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Dantooine">Dantooine
+            <span class="probe">
+              <input type="radio" name="probeDantooine" value="unknown" checked>Unknown
+              <input type="radio" name="probeDantooine" value="checked">Checked
+              <input type="radio" name="probeDantooine" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Dathomir">Dathomir
+            <span class="probe">
+              <input type="radio" name="probeDathomir" value="unknown" checked>Unknown
+              <input type="radio" name="probeDathomir" value="checked">Checked
+              <input type="radio" name="probeDathomir" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Endor">Endor
+            <span class="probe">
+              <input type="radio" name="probeEndor" value="unknown" checked>Unknown
+              <input type="radio" name="probeEndor" value="checked">Checked
+              <input type="radio" name="probeEndor" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Felucia">Felucia
+            Loyalty
+            <select class="loyalty"  id="lFelucia">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeFelucia" value="unknown" checked>Unknown
+              <input type="radio" name="probeFelucia" value="checked">Checked
+              <input type="radio" name="probeFelucia" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Geonosis">Geonosis
+            Loyalty
+            <select class="loyalty" id="lGeonosis">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeGeonosis" value="unknown" checked>Unknown
+              <input type="radio" name="probeGeonosis" value="checked">Checked
+              <input type="radio" name="probeGeonosis" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Hoth">Hoth
+            <span class="probe">
+              <input type="radio" name="probeHoth" value="unknown" checked>Unknown
+              <input type="radio" name="probeHoth" value="checked">Checked
+              <input type="radio" name="probeHoth" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Illum">Illum
+            <span class="probe">
+              <input type="radio" name="probeIllum" value="unknown" checked>Unknown
+              <input type="radio" name="probeIllum" value="checked">Checked
+              <input type="radio" name="probeIllum" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Kashyyyk">Kashyyyk
+            Loyalty
+            <select class="loyalty" id="lKashyyyk">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeKashyyyk" value="unknown" checked>Unknown
+              <input type="radio" name="probeKashyyyk" value="checked">Checked
+              <input type="radio" name="probeKashyyyk" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Kessel">Kessel
+            Loyalty
+            <select class="loyalty" id="lKessel">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeKessel" value="unknown" checked>Unknown
+              <input type="radio" name="probeKessel" value="checked">Checked
+              <input type="radio" name="probeKessel" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Malastare">Malastare
+            Loyalty
+            <select class="loyalty" id="lMalastare">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeMalastare" value="unknown" checked>Unknown
+              <input type="radio" name="probeMalastare" value="checked">Checked
+              <input type="radio" name="probeMalastare" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Mandalore">Mandalore
+            Loyalty
+            <select class="loyalty" id="lMandalore">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeMandalore" value="unknown" checked>Unknown
+              <input type="radio" name="probeMandalore" value="checked">Checked
+              <input type="radio" name="probeMandalore" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="MonCalamari">Mon Calamari
+            Loyalty
+            <select class="loyalty" id="lMonCalamari">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeMonCalamari" value="unknown" checked>Unknown
+              <input type="radio" name="probeMonCalamari" value="checked">Checked
+              <input type="radio" name="probeMonCalamari" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Mustafar">Mustafar
+            Loyalty
+            <select class="loyalty" id="lMustafar">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeMustafar" value="unknown" checked>Unknown
+              <input type="radio" name="probeMustafar" value="checked">Checked
+              <input type="radio" name="probeMustafar" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Mygeeto">Mygeeto
+            Loyalty
+            <select class="loyalty" id="lMygeeto">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeMygeeto" value="unknown" checked>Unknown
+              <input type="radio" name="probeMygeeto" value="checked">Checked
+              <input type="radio" name="probeMygeeto" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Naboo">Naboo
+            Loyalty
+            <select class="loyalty" id="lNaboo">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeNaboo" value="unknown" checked>Unknown
+              <input type="radio" name="probeNaboo" value="checked">Checked
+              <input type="radio" name="probeNaboo" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="NalHutta">Nal Hutta
+            Loyalty
+            <select class="loyalty" id="lNalHutta">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeNalHutta" value="unknown" checked>Unknown
+              <input type="radio" name="probeNalHutta" value="checked">Checked
+              <input type="radio" name="probeNalHutta" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="OrdMantell">Ord Mantell
+            Loyalty
+            <select class="loyalty" id="lOrdMantell">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeOrdMantell" value="unknown" checked>Unknown
+              <input type="radio" name="probeOrdMantell" value="checked">Checked
+              <input type="radio" name="probeOrdMantell" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Rodia">Rodia
+            Loyalty
+            <select class="loyalty" id="lRodia">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeRodia" value="unknown" checked>Unknown
+              <input type="radio" name="probeRodia" value="checked">Checked
+              <input type="radio" name="probeRodia" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Ryloth">Ryloth
+            Loyalty
+            <select class="loyalty" id="lRyloth">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeRyloth" value="unknown" checked>Unknown
+              <input type="radio" name="probeRyloth" value="checked">Checked
+              <input type="radio" name="probeRyloth" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Saleucami">Saleucami
+            Loyalty
+            <select class="loyalty" id="lSaleucami">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeSaleucami" value="unknown" checked>Unknown
+              <input type="radio" name="probeSaleucami" value="checked">Checked
+              <input type="radio" name="probeSaleucami" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Sullust">Sullust
+            Loyalty
+            <select class="loyalty" id="lSullust">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeSullust" value="unknown" checked>Unknown
+              <input type="radio" name="probeSullust" value="checked">Checked
+              <input type="radio" name="probeSullust" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Tatooine">Tatooine
+            <span class="probe">
+              <input type="radio" name="probeTatooine" value="unknown" checked>Unknown
+              <input type="radio" name="probeTatooine" value="checked">Checked
+              <input type="radio" name="probeTatooine" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Toydaria">Toydaria
+            Loyalty
+            <select class="loyalty" id="lToydaria">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeToydaria" value="unknown" checked>Unknown
+              <input type="radio" name="probeToydaria" value="checked">Checked
+              <input type="radio" name="probeToydaria" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Utapau">Utapau
+            Loyalty
+            <select class="loyalty" id="lUtapau">
+              <option value="neutral">Neutral</option>
+              <option value="contested">Contested</option>
+              <option value="subjugated">Subjugated</option>
+              <option value="imperial">Imperial</option>
+              <option value="rebel">Rebel</option>
+            </select>
+            <span class="probe">
+              <input type="radio" name="probeUtapau" value="unknown" checked>Unknown
+              <input type="radio" name="probeUtapau" value="checked">Checked
+              <input type="radio" name="probeUtapau" value="card">Card
+            </span>
+          </div>
+          <div class="controller" id="Yavin">Yavin
+            <span class="probe">
+              <input type="radio" name="probeYavin" value="unknown" checked>Unknown
+              <input type="radio" name="probeYavin" value="checked">Checked
+              <input type="radio" name="probeYavin" value="card">Card
+            </span>
+          </div>
+
+        </div>
+        <div class="content">
+          <div class="button" id="superlaser">Destroy Planet</div>
+          <div id="planetDropdown">
+            <select id="superlaserTarget">
+              <option value="default">Target?</option>
+              <option value="Alderaan">Alderaan</option>
+              <option value="Bespin">Bespin</option>
+              <option value="Bothawui">Bothawui</option>
+              <option value="CatoNeimoidia">Cato Neimoidia</option>
+              <option value="Corellia">Corellia</option>
+              <option value="Coruscant">Coruscant</option>
+              <option value="Dagobah">Dagobah</option>
+              <option value="Dantooine">Dantooine</option>
+              <option value="Dathomir">Dathomir</option>
+              <option value="Endor">Endor</option>
+              <option value="Felucia">Felucia</option>
+              <option value="Geonosis">Geonosis</option>
+              <option value="Hoth">Hoth</option>
+              <option value="Illum">Illum</option>
+              <option value="Kashyyyk">Kashyyyk</option>
+              <option value="Kessel">Kessel</option>
+              <option value="Malastare">Malastare</option>
+              <option value="Mandalore">Mandalore</option>
+              <option value="MonCalamari">Mon Calamari</option>
+              <option value="Mustafar">Mustafar</option>
+              <option value="Mygeeto">Mygeeto</option>
+              <option value="Naboo">Naboo</option>
+              <option value="NalHutta">Nal Hutta</option>
+              <option value="OrdMantell">Ord Mantell</option>
+              <option value="Rodia">Rodia</option>
+              <option value="Ryloth">Ryloth</option>
+              <option value="Saleucami">Saleucami</option>
+              <option value="Sullust">Sullust</option>
+              <option value="Tatooine">Tatooine</option>
+              <option value="Toydaria">Toydaria</option>
+              <option value="Utapau">Utapau</option>
+              <option value="Yavin">Yavin</option>
+            </select>
+          </div>
+          <div id="confirmation">
+            <p>ARE YOU SURE? THIS CANNOT BE UNDONE!</p>
+            <button id="superlaserFire">You may fire when ready.</button>
+            <button id="superlaserCancel">On second thought...</button>
+          </div>
+          <div class="button" id="rebelsMoved">Rebels Moved</div>
+          <div class="button" id="buildPhase">Build Phase</div>
+          <div id="buildGrid">
+            <span class="grid names">Imperial Units</span>
+            <span class="grid values">1</span>
+            <span class="grid values">2</span>
+            <span class="grid values">3</span>
+            <span class="grid names rebel">Rebel Units</span>
+            <span class="grid values">1</span>
+            <span class="grid values">2</span>
+            <span class="grid values">3</span>
+            <span class="grid names ground">Stormtrooper</span>
+            <span class="grid values" id="storm1">0</span>
+            <span class="grid values" id="storm2">0</span>
+            <span class="grid values" id="storm3">0</span>
+            <span class="grid names rebel ground">Rebel Trooper</span>
+            <span class="grid values" id="rebel1">0</span>
+            <span class="grid values" id="rebel2">0</span>
+            <span class="grid values" id="rebel3">0</span>
+            <span class="grid names ground">AT-ST</span>
+            <span class="grid values" id="atst1">0</span>
+            <span class="grid values" id="atst2">0</span>
+            <span class="grid values" id="atst3">0</span>
+            <span class="grid names rebel ground">Airspeeder</span>
+            <span class="grid values" id="speeder1">0</span>
+            <span class="grid values" id="speeder2">0</span>
+            <span class="grid values" id="speeder3">0</span>
+            <span class="grid names ground">AT-AT</span>
+            <span class="grid values" id="atat1">0</span>
+            <span class="grid values" id="atat2">0</span>
+            <span class="grid values" id="atat3">0</span>
+            <span class="grid names rebel ground">Buildings</span>
+            <span class="grid values" id="building1">0</span>
+            <span class="grid values" id="building2">0</span>
+            <span class="grid values" id="building3">0</span>
+            <span class="grid names space">TIE Fighters</span>
+            <span class="grid values" id="tie1">0</span>
+            <span class="grid values" id="tie2">0</span>
+            <span class="grid values" id="tie3">0</span>
+            <span class="grid names rebel space">Wings/Transport</span>
+            <span class="grid values" id="wing1">0</span>
+            <span class="grid values" id="wing2">0</span>
+            <span class="grid values" id="wing3">0</span>
+            <span class="grid names space">Assault Carrier</span>
+            <span class="grid values" id="carrier1">0</span>
+            <span class="grid values" id="carrier2">0</span>
+            <span class="grid values" id="carrier3">0</span>
+            <span class="grid names rebel space">Corvette</span>
+            <span class="grid values" id="corvette1">0</span>
+            <span class="grid values" id="corvette2">0</span>
+            <span class="grid values" id="corvette3">0</span>
+            <span class="grid names space">Star Destroyer</span>
+            <span class="grid values" id="destroyer1">0</span>
+            <span class="grid values" id="destroyer2">0</span>
+            <span class="grid values" id="destroyer3">0</span>
+            <span class="grid names rebel space">Mon Cal Cruiser</span>
+            <span class="grid values" id="cruiser1">0</span>
+            <span class="grid values" id="cruiser2">0</span>
+            <span class="grid values" id="cruiser3">0</span>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

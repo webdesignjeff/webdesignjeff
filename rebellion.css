@@ -1,0 +1,458 @@
+body {
+  position: relative;
+  margin: 0;
+  background-color: #444;
+  color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.startup {
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  height: 500px;
+  width: 500px;
+  margin-left: 5%;
+  background-color: grey;
+  text-size: 24px;
+  text-align: center;
+}
+
+.startup p {
+  margin-left: 25px;
+  margin-top: 50px;
+}
+
+.startup select {
+  margin-left: 40px;
+}
+
+.startup button {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.map {
+  position: relative;
+  width: auto;
+}
+
+.map img {
+  height: 590px;
+  width: 640px;
+  float: left;
+}
+
+.map .planet {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  border: 10px solid grey;
+  transition: border .5s,background-color .5s;
+}
+
+.map .planet:hover .tooltip {
+  visibility: visible;
+}
+
+.map .tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -40px;
+  text-align: center;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.map #pCoruscant {
+  background-color: black;
+  border: 10px solid blue;
+  top: 510px;
+  left: 313px;
+}
+
+.map #pRebelBase {
+  background-color: black;
+  top: 10px;
+  left: 3px;
+  border: 10px solid red;
+}
+
+.map #pRebelBase .tooltip {
+  margin-left: 0;
+}
+
+.map #pAlderaan {
+  top: 431px;
+  left: 238px;
+}
+
+.map #pBespin {
+  top: 433px;
+  left: 505px;
+}
+
+.map #pBothawui {
+  top: 116px;
+  left: 315px;
+}
+
+.map #pCatoNeimoidia {
+  top: 376px;
+  left: 332px;
+}
+
+.map #pCorellia {
+  top: 482px;
+  left: 412px;
+}
+
+.map #pDagobah {
+  top: 263px;
+  left: 493px;
+  border: 0px;
+}
+
+.map #pDantooine {
+  top: 339px;
+  left: 13px;
+  border: 0px;
+}
+
+.map #pDathomir {
+  top: 318px;
+  left: 112px;
+  border: 0px;
+}
+
+.map #pEndor {
+  top: 528px;
+  left: 522px;
+  border: 0px;
+}
+
+.map #pFelucia {
+  top: 148px;
+  left: 100px;
+}
+
+.map #pGeonosis {
+  top: 104px;
+  left: 481px;
+}
+
+.map #pHoth {
+  top: 400px;
+  left: 587px;
+  border: 0px;
+}
+
+.map #pIllum {
+  top: 532px;
+  left: 123px;
+  border: 0px;
+}
+
+.map #pKashyyyk {
+  top: 296px;
+  left: 261px;
+}
+
+.map #pKessel {
+  top: 45px;
+  left: 188px;
+}
+
+.map #pMalastare {
+  top: 271px;
+  left: 338px;
+}
+
+.map #pMandalore {
+  top: 296px;
+  left: 183px;
+}
+
+.map #pMonCalamari {
+  top: 25px;
+  left: 88px;
+}
+
+.map #pMustafar {
+  top: 290px;
+  left: 563px;
+}
+
+.map #pMygeeto {
+  top: 420px;
+  left: 73px;
+}
+
+.map #pNaboo {
+  top: 223px;
+  left: 429px;
+}
+
+.map #pNalHutta {
+  top: 27px;
+  left: 263px;
+}
+
+.map #pOrdMantell {
+  top: 482px;
+  left: 183px;
+}
+
+.map #pRodia {
+  top: 132px;
+  left: 380px;
+}
+
+.map #pRyloth {
+  top: 10px;
+  left: 513px;
+}
+
+.map #pSaleucami {
+  top: 124px;
+  left: 159px;
+}
+
+.map #pSullust {
+  top: 360px;
+  left: 430px;
+}
+
+.map #pTatooine {
+  top: 10px;
+  left: 393px;
+  border: 0px;
+}
+
+.map #pToydaria {
+  top: 160px;
+  left: 243px;
+}
+
+.map #pUtapau {
+  top: 137px;
+  left: 572px;
+}
+
+.map #pYavin {
+  top: 180px;
+  left: 32px;
+  border: 0px;
+}
+
+.container {
+  float: right;
+  display: inline-block;
+  height: 570px;
+  width: 600px;
+  background-color: grey;
+  margin: 10px;
+}
+
+.container #tabs {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  list-style-type: none;
+}
+
+.container #tabs .tab {
+  background-color: darkgrey;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.container #tabs .active {
+  background-color: lightgrey;
+}
+
+.container #contentContainer {
+  position: relative;
+  height: 500px;
+  padding: 15px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #ccc;
+  border: 1px solid #000;
+}
+
+.container #contentContainer .content {
+  color: black;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.container #contentContainer .content:not(.active) {
+  display: none;
+}
+
+.container #contentContainer .content .active {
+  display: block;
+}
+
+.container #contentContainer .content h2 {
+  color: black;
+  text-align: center;
+}
+
+.container #contentContainer .content h3 {
+  color: black;
+  text-align: center;
+}
+
+.container #contentContainer .content .previewbox {
+  height: 20px;
+  width: 30%;
+  margin-left: 180px;
+  margin-top: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.container #contentContainer .content #neutralPre {
+  background-color: grey;
+}
+
+.container #contentContainer .content #rebelPre {
+  background-color: red;
+}
+
+.container #contentContainer .content #contestedPre {
+  background-color: purple;
+  color: white;
+}
+
+.container #contentContainer .content #subjugatedPre {
+  background-color: cornflowerblue;
+}
+
+.container #contentContainer .content #imperialPre {
+  background-color: blue;
+  color: white;
+}
+
+.container #contentContainer .content #unknownPre {
+  background-color: orange;
+}
+
+.container #contentContainer .content #checkedPre {
+  background-color: darkgreen;
+  color: white;
+}
+
+.container #contentContainer .content #cardPre {
+  background-color: lawngreen;
+}
+
+.container #contentContainer .content .button {
+  height: 30px;
+  font-size: 24px;
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 25%;
+  transition: background-color .5s;
+}
+
+.container #contentContainer .content .button:hover {
+  background-color: lawngreen;
+}
+
+.controller {
+  border: 3px solid red;
+  background-color: orange;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.controller .probe {
+  float: right;
+}
+
+#Coruscant {
+  border: 3px solid green;
+  background-color: lightgreen;
+}
+
+#planetDropdown {
+  position: absolute;
+  top: 30px;
+  right: 90px;
+}
+
+#confirmation {
+  position: absolute;
+  float: left;
+  text-align: center;
+  height: 180px;
+  width: 500px;
+  top: -300px;
+  left: 60px;
+  background-color: white;
+  border: 5px dotted red;
+  transition: top .5s;
+}
+
+#buildGrid {
+  box-sizing: border-box;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 80px;
+  background-color: white;
+}
+
+#buildGrid .grid {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -6px;
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+}
+
+#buildGrid .names {
+  width: 125px;
+}
+
+#buildGrid .values {
+  width: 25px;
+}
+
+#buildGrid .rebel {
+  margin-left: 6px;
+}
+
+#buildGrid .ground {
+  background-color: orange;
+  color: black;
+}
+
+#buildGrid .space {
+  background-color: blue;
+  color: white;
+}
