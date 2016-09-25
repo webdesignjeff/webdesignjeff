@@ -30,7 +30,7 @@ $('#startupSubmit').on('click', function(){
     menu = ("#" + system);
     $(menu).css('border-color', 'green');
     $(menu).css('background-color', 'lightgreen');
-    $(planet).css('background-color', 'black');
+    $(planet).css('background-color', 'lawngreen');
   }
 
   //Setting subjugated Imperial planets
@@ -47,7 +47,7 @@ $('#startupSubmit').on('click', function(){
     menu = ("#" + system);
     $(menu).css('border-color', 'green');
     $(menu).css('background-color', 'lightgreen');
-    $(planet).css('background-color', 'black');
+    $(planet).css('background-color', 'lawngreen');
   }
 
   //Setting Rebel planets
