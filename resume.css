@@ -39,7 +39,17 @@ header h1 {
   color: #123456;
   text-align: center;
   line-height: 85px;
-  transition: background-color .3s, border .3s, border-radius .3s;
+  transition: background-color .3s, color .3s, border-radius .3s;
+}
+
+.navbutton:link {
+  text-decoration: none;
+}
+
+.navbutton:hover {
+  background-color: white;
+  color: #abcdef;
+  border-radius: 0;
 }
 
 .container {
@@ -72,8 +82,9 @@ article ul li {
 }
 
 article .portfolio {
-  height: 168px;
-  width: calc(100%-10px);
+  position: relative;
+  min-height: 160px;
+  width: calc(100% - 60px);
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 25px;
@@ -82,13 +93,22 @@ article .portfolio {
 
 article .portfolio img {
   float: left;
-  height: 100%;
+  height: 160px;
 }
 
 article .whitespace {
-  height: 200px;
+  height: 150px;
   width: auto;
   font-style: italic;
   font-weight: bold;
   font-size: 16px;
+}
+
+form {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.disclaimer {
+  text-size: 8px;
 }
