@@ -427,11 +427,11 @@ $("#buildPhase").click(function(){
           $(menu).text(target);
         }
         if (target == "imperial"){
-          menu = '#tie1';
+          menu = '#storm1';
           value = $(menu).text();
           target = (parseInt(value) + 1);
           $(menu).text(target);
-          menu = '#destroyer3';
+          menu = '#tie1';
           value = $(menu).text();
           target = (parseInt(value) + 1);
           $(menu).text(target);
