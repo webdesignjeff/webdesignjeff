@@ -1,0 +1,217 @@
+body{
+  margin:0 auto;
+  background-color:#123456;
+  color:#ccc;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+.floatLeft{
+  float:left;
+}
+
+.floatRight{
+  float:right;
+}
+
+.hide{
+  display:none;
+}
+
+header{
+  position:fixed;
+  margin-top:-80px;
+  height:80px;
+  width:100%;
+  transition:margin-top .5s;
+  // background-color:#ccc;
+  // color:black;
+  // margin-bottom:80px;
+  p{
+    font-family: 'Jim Nightshade', cursive;
+    display:inline-block;
+    font-size:45px;
+    margin-top:10px;
+    padding-left:25px;
+  }
+  .tab{
+    display:inline-block;
+    height:60px;
+    width:190px;
+    font-size:50px;
+    font-weight:bold;
+    border:1px solid #abcdef;
+    border-radius:20px;
+    margin-top:10px;
+    margin-right:20px;
+    text-align:center;
+    transition:background-color .3s, color .3s;
+    &:hover{
+      background-color:#abcdef;
+      color:white;
+      cursor:default;
+    }
+  }
+
+  #navAboutMe{
+    margin-left:150px;
+  }
+}
+
+.splash{
+  z-index:1;
+  position:absolute;
+  height:100vh;
+  box-sizing:border-box;
+  width:100%;
+  background-color:#123456;
+  border:15px solid #abcdef;
+  p{
+    // text-align:center;
+    font-family: 'Jim Nightshade', cursive;
+    &.splashName{
+      font-size:18vh;
+      margin-top:50px;
+      margin-left:300px;
+    }
+    &.splashText{
+      font-size:8vh;
+      margin-top:20px;
+      margin-left:100px;
+    }
+  }
+  .nav{
+    display:inline-block;
+    height:60px;
+    width:190px;
+    font-size:50px;
+    font-weight:bold;
+    background-color:#234567;
+    border:1px solid black;
+    border-radius:20px;
+    margin-top:100px;
+    margin-right:20px;
+    text-align:center;
+    transition:background-color .3s, color .3s;
+    &:hover{
+      background-color:grey;
+      color:#abcdef;
+      cursor:default;
+    }
+  }
+
+  #navAboutMe{
+    margin-left:400px;
+  }
+
+  img{
+    margin-top:50px;
+    margin-right:180px;
+    float:right;
+  }
+}
+
+.container{
+  position:absolute;
+  overflow-y:auto;
+  height:85vh;
+  width:calc(100% - 20px);
+  background-color:#123456;
+  // border:3px solid grey;
+  top:90px;
+  margin-left:10px;
+}
+
+article{
+  font-size:30px;
+  &:not(.active){
+    display: none;
+  }
+  &.active{
+    display:block;
+  }
+  h1{
+    font-family: 'Architects Daughter', cursive;
+    text-align:center;
+    font-style: italic;
+  }
+}
+
+.aboutMePage{
+  img{
+    float:right;
+    margin-right:10px;
+    max-width:25%;
+  }
+  p:last-child{
+    margin-bottom:0;
+  }
+}
+
+// .info{
+//   display:inline-block;
+//   text-align:center;
+// }
+
+.portfolio{
+  position:relative;
+  min-height:200px;
+  width:calc(100% - 10px);
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:25px;
+  // background-color:#abcdef;
+  border:2px solid #abcdef;
+  p{
+    font-size:42px;
+    margin-top:10px;
+    margin-bottom:0;
+    text-align:center;
+    font-family: 'Racing Sans One', cursive;
+  }
+  span{
+    font-size:20px;
+  }
+
+  // .contentWrapper{
+  //   position:relative;
+  //   width:100%;
+  // }
+
+  img{
+    min-height:200px;
+    max-width:25%;
+  }
+}
+
+.whitespace{
+  height:150px;
+  width:auto;
+  font-style:italic;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.disclaimer{
+  font-size:20px;
+}
+
+.textbox{
+  font-size:30px;
+  height:30px;
+}
+
+form{
+  margin-left:100px;
+}
+
+textarea{
+  vertical-align:middle;
+  font-size:24px;
+}
+
+#submitButton{
+  margin-left:40%;
+  height:30px;
+  width:75px;
+  font-size:20px;
+}

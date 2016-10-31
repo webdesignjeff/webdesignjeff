@@ -1,29 +1,46 @@
 <!doctype html>
 <html>
   <head>
-    <title>Resume - Jeff Woods</title>
+    <title>Portfolio - Jeff Woods</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="resume.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
-    <script src="resume.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
-      <h1>Jeff Woods - Front-End Web Designer</h1>
+      <p>Jeff Woods: Front-End Web Designer</p>
+      <div id="navAboutMe" class="tab">About</div>
+      <div id="navPortfolio" class="tab">Portfolio</div>
+      <div id="navContactMe" class="tab">Contact</div>
     </header>
-    <section class="container">
-      <div id="navBar">
-        <a href="#aboutMe" class="navbutton">About</a>
-        <a href="#portfolio" class="navbutton">Portfolio</av>
-        <a href="#contactMe" class="navbutton">Contact</a>
+    <section class="splash page">
+      <img class="slides" src="images/cube1.jpg"/>
+      <img class="slides hide" src="images/cube2.jpg"/>
+      <img class="slides hide" src="images/cube3.jpg"/>
+      <img class="slides hide" src="images/cube4.jpg"/>
+      <img class="slides hide" src="images/cube5.jpg"/>
+      <img class="slides hide" src="images/cube6.jpg"/>
+      <img class="slides hide" src="images/cube7.jpg"/>
+      <img class="slides hide" src="images/cube7.jpg"/>
+      <p class="splashName">Jeff Woods</p>
+      <p class="splashText">Brilliant Front-End Web Designer For Hire</p>
+      <div>
+        <div id="navAboutMe" class="nav">About</div>
+        <div id="navPortfolio" class="nav">Portfolio</div>
+        <div id="navContactMe" class="nav">Contact</div>
       </div>
-      <article>
-        <h2 id="aboutMe">About Me</h2>
+    </section>
+    <section class="container">
+      <article class="aboutMePage content">
+        <h1 id="aboutMe">About Me</h1>
 
-        <p>Hello! My name is Jeff Woods, and I'm a motivated and brilliant aspiring front-end web developer!</p>
-        <!-- <img src="images/photo.png" /> -->
+        <img src="images/photo.png" />
+        <p>Hello! My name is Jeff Woods, and I'm a motivated and brilliant front-end web developer that would love to work for you!</p>
         <p>In addition to self-taught lessons, I've received instruction from CHS Code Camp, a Charleston code bootcamp in:</p>
         <ul>
           <li>HTML5</li>
@@ -32,45 +49,54 @@
           <li>JavaScript</li>
           <li>jQuery</li>
         </ul>
-        <p> Before that, I had a career spanning many years in customer service and technical support. This gives me an excellent background in not only dealing with customers, but in communication, troubleshooting issues, handling high-pressure and rapidly-changing situations, and even training and preparing newsletters and information updates for my co-workers.</p>
-        <p>In addition to my technical skills learned on the job, I am also very familiar with the Microsoft Office suite, especially Word, Excel, and Powerpoint. I also type at 60 WPM and can solve a Rubik's Cube. (My best time is about a minute and a half!)</p>
-
-
-
-        <h2 id="portfolio"> Portfolio </h2>
-
+        <p> Before that, I had a career spanning many years in customer service and technical support. This gives me an excellent background in not only dealing with customers, but in communication, troubleshooting issues, handling high-pressure and rapidly-changing situations, and even being involved in training and preparing newsletters and information updates for my team.</p>
+        <p>In addition to my technical skills learned on the job, I am also very familiar with the Microsoft Office suite, especially Word, Excel, and Powerpoint, and additionally I type at 60 WPM.</p>
+        <p>In my free time, if I'm not in front of my computer working on a project or playing a game, I'm at a table with my friends and a board or card game. I enjoy all manner of games, especially ones involving strategy or puzzle solving. I also can solve a Rubik's Cube. (My best time is about a minute and a half!)</p>
+      </article>
+      <article class="portfolioPage content">
+        <h1> Portfolio </h1>
         <div class="portfolio">
           <a href="news.html">
-            <img class="preview" src="images/102preview.png" />
+            <img class="preview floatLeft" src="images/102preview.png" />
           </a>
-          <p> This is a sample news page created in my classes at CHS Code Camp, designed to highlight features such as dropdown menus (Nav Item 2), scrollbars (the Upcoming News section), and images changing size when hovered over (the pictures of Nick Cage). The code was written in basic CSS, and the images were provided by various filler image generator sites. </p>
+          <p>Sample News Page</p>
+          <span class="info">This is a sample news page created in my classes at CHS Code Camp, designed to highlight features such as dropdown menus (Nav Item 2), scrollbars (the Upcoming News section), and images changing size when hovered over (the pictures of Nick Cage). The code was written in basic CSS, and the images were provided by various filler image generator sites.</span>
         </div>
         <div class="portfolio">
-          <a href="armada.html">
-            <img class="preview" src="images/armadapreview.png" />
+          <a href="news.html">
+            <img class="preview floatRight" src="images/armadapreview.png" />
           </a>
-          <p> This is a scoreboard app created for the tabletop game Star Wars Armada by Fantasy Flight Games, written with SCSS and jQuery, done for practice and as proof of concept. The score buttons open a prompt for how many points scored, which shows in the larger numbers in the middle of the page. The smaller numbers towards the top are used in tournaments and are calculated based on the difference in score. </p>
+            <p>Star Wars Armada Scoreboard</p>
+            <span class="info">This is a scoreboard app created for the tabletop game Star Wars Armada by Fantasy Flight Games, written with SCSS and jQuery. The score buttons open a prompt for how many points scored, which shows in the larger numbers in the middle of the page. The smaller numbers towards the top are used in tournaments and are calculated based on the difference in score.</span>
         </div>
         <div class="portfolio">
           <a href="wk.html">
-            <img class="preview" src="images/warriorknights.png" />
+            <img class="preview floatLeft" src="images/warriorknights.png" />
           </a>
-          <p> This is a scoreboard app created for the tabletop game Warrior Knights by Fantasy Flight Games, written with SCSS and jQuery. In this game, you score one point for each city you control from a limited pool of points. I wrote this not just as a scoreboard, but to project the final scores and how many turns the game would last. The white numbers for influence and cities for each player open a prompt upon clicking.</p>
+          <p>Warrior Knights Scoreboard</p>
+          <span class="info">This is a scoreboard created for the game Warrior Knights by Fantasy Flight Games, written with SCSS and jQuery. In this game, you score one point for cities you control from a limited pool of points. I wrote this not just as a scoreboard, but to project the final scores and how many turns the game would last.</span>
         </div>
         <div class="portfolio">
           <a href="rebellion.html">
-            <img class="preview" src="images/rebellion.png" />
+            <img class="preview floatRight" src="images/rebellion.png" />
           </a>
-          <p> This is a map tracker created for the tabletop game Star Wars Rebellion by Fantasy Flight Games. In this game, the Imperial player searches for the Rebel base. This map, written with SCSS and jQuery, is designed to help the Imperial player flag locations that they've cleared as possibilities. Additionally, there is a function designed to calculate how many units both players produce. </p>
+          <p>Star Wars Rebellion Map Tracker </p>
+          <span class="info">This is a map tracker created for the game Star Wars Rebellion by Fantasy Flight Games. In this game, the Imperial player searches for the Rebel base. This map, written with SCSS and jQuery, is helps the Imperial player flag locations that they've confirmed are not the Rebel Base. Additionally, there is a function to calculate how many units both players produce. </span>
         </div>
         <div class="whitespace">More coming soon!...</div>
-        <p class:"disclaimer">Disclaimer:The code on these pages was done by me, but any copyrights or trademarks such as Star Wars belong to their original owners.</p>
-        <h2 id="contactMe">Contact Me</h2>
-        <p> If you would like to share any comments, feedback, or anything else, I'd love to hear from you at jeffwoods13@yahoo.com by email!</p>
+        <p class="disclaimer">Disclaimer:The code on these pages was done by me, but any copyrights or trademarks such as Star Wars belong to their original owners.</p>
+      </article>
+      <article class="contactMePage content">
+        <h1 id="contactMe">Contact Me</h1>
+        <p> If you would like to share any comments, feedback, or anything else, I'd love to hear from you! Fill out the below form, and I'll get back with you as soon as I can!</p>
         <p> Right now, I'm looking for a permanent or long-term front-end developer position where I can not only use my skillset but also learn and expand it. But if you have a short-term project you'd like some help on, I'd be happy to take that on. I love a good puzzle or challenge!</p>
-        <div class="whitespace"></div>
-        <h2> Thank you very much for your time in reading my portfolio, and have a fantastic day!</h2>
-        <div class="whitespace"></div>
+        <form action="https://formspree.io/jeffwoods13@yahoo.com" method="POST">
+          Your Name:<input class="textbox" type="text" name="name">
+          Email Address:<input class="textbox" type="text" name="email"><br>
+          Message:<textarea class="msg" name="message" rows="1" cols="71"></textarea><br>
+          <input id="submitButton" type="submit" value="Submit">
+        </form>
+        <p> Thank you very much for your time in reading my portfolio, and have a fantastic day!</p>
       </article>
     </section>
   </body>
