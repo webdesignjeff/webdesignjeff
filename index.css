@@ -73,13 +73,13 @@ header #navAboutMe {
 
 .splash p.splashName {
   font-size: 18vh;
-  margin-top: 50px;
-  margin-left: 300px;
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-bottom: 0;
 }
 
 .splash p.splashText {
   font-size: 8vh;
-  margin-top: 20px;
   margin-left: 100px;
 }
 
@@ -110,7 +110,7 @@ header #navAboutMe {
 
 .splash img {
   margin-top: 50px;
-  margin-right: 180px;
+  margin-right: 40px;
   float: right;
 }
 
@@ -134,12 +134,6 @@ article:not(.active) {
 
 article.active {
   display: block;
-}
-
-article h1 {
-  font-family: 'Architects Daughter', cursive;
-  text-align: center;
-  font-style: italic;
 }
 
 .aboutMePage img {
