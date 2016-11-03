@@ -169,7 +169,7 @@ article.active {
 }
 
 .portfolio img {
-  min-height: 200px;
+  height: 200px;
   max-width: 25%;
 }
 
